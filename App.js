@@ -1,4 +1,5 @@
-import { StyleSheet, Text, View, Picker } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
+import { Picker } from '@react-native-picker/picker';
 import AppBar from './components/AppBar';
 import Button from './components/Button';
 import MyTextField from './components/MyTextField';
@@ -35,7 +36,7 @@ export default function App() {
   return (
     
     <View style={styles.container}>
-      <AppBar title="Unit Converter" />
+      <AppBar />
       <View style={styles.formContainer}>
         <MyTextField
           hintText="Enter Value"
